@@ -2,7 +2,8 @@ package org.bitsofinfo.hazelcast.discovery.docker.swarm;
 
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
-import com.hazelcast.nio.Address;
+import com.hazelcast.cluster.Address;
+import com.hazelcast.instance.EndpointQualifier;
 import com.hazelcast.spi.MemberAddressProvider;
 
 import java.net.InetSocketAddress;
@@ -329,5 +330,19 @@ public class SwarmMemberAddressProvider implements MemberAddressProvider {
 
         return new InetSocketAddress(addr.getHost(), addr.getPort());
     }
+
+
+	@Override
+	public InetSocketAddress getBindAddress(EndpointQualifier qualifier) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public InetSocketAddress getPublicAddress(EndpointQualifier qualifier) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

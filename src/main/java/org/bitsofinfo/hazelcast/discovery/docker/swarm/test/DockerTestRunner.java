@@ -4,10 +4,10 @@ import com.hazelcast.config.ClasspathXmlConfig;
 import com.hazelcast.config.Config;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.instance.AddressPicker;
-import com.hazelcast.instance.DefaultNodeContext;
-import com.hazelcast.instance.HazelcastInstanceFactory;
-import com.hazelcast.instance.Node;
-import com.hazelcast.instance.NodeContext;
+import com.hazelcast.instance.impl.DefaultNodeContext;
+import com.hazelcast.instance.impl.HazelcastInstanceFactory;
+import com.hazelcast.instance.impl.Node;
+import com.hazelcast.instance.impl.NodeContext;
 import org.bitsofinfo.hazelcast.discovery.docker.swarm.SwarmAddressPicker;
 import org.bitsofinfo.hazelcast.discovery.docker.swarm.SystemPrintLogger;
 

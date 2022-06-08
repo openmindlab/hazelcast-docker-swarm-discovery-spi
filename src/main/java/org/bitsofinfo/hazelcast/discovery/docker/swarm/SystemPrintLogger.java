@@ -123,4 +123,21 @@ public class SystemPrintLogger implements ILogger {
         return true;
     }
 
+	@Override
+	public void info(Throwable thrown) {
+		 System.out.println("FINE " + thrown.getMessage());
+		
+	}
+
+	@Override
+	public void info(String message, Throwable thrown) {
+		 System.out.println("FINE " + message + " " + thrown.getMessage());
+		
+	}
+
+	@Override
+	public boolean isSevereEnabled() {
+		return true;
+	}
+
 }

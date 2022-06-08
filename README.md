@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/bitsofinfo/hazelcast-docker-swarm-discovery-spi.svg?branch=master)](https://travis-ci.org/bitsofinfo/hazelcast-docker-swarm-discovery-spi)
 
-Provides a Docker Swarm mode based discovery strategy for Hazlecast 3.6+ enabled applications.
+Provides a Docker Swarm mode based discovery strategy for Hazlecast 4+ enabled applications.
 This is an easy to configure plug-and-play Hazlecast DiscoveryStrategy that will enable Hazelcast applications to dynamically discover one another when deployed as Docker Swarm services.
 
 * [Status](#status)
@@ -22,7 +22,7 @@ This is an easy to configure plug-and-play Hazlecast DiscoveryStrategy that will
 
 ## <a id="status"></a>Status
 
-This is release candidate code, tested against Hazelcast 3.6-EA+ through 3.9.x Stable releases. See **Releases** below for compatible jars. For use only on Docker 1.12+ "swarm mode" environments.
+This is release candidate code, tested against Hazelcast 4 Stable releases. See **Releases** below for compatible jars. For use only on Docker 1.12+ "swarm mode" environments.
 
 **IMPORTANT:**: Do not rely on JCenter/Bintray anymore! Update your gradle/maven dependencies to use Maven Central: https://search.maven.org/search?q=g:org.bitsofinfo
 

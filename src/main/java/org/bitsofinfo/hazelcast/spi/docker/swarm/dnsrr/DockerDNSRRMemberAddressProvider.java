@@ -14,6 +14,7 @@
 
 package org.bitsofinfo.hazelcast.spi.docker.swarm.dnsrr;
 
+import com.hazelcast.instance.EndpointQualifier;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
 import com.hazelcast.spi.MemberAddressProvider;
@@ -156,4 +157,14 @@ public class DockerDNSRRMemberAddressProvider
     public InetSocketAddress getPublicAddress() {
         return bindAddress;
     }
+
+	@Override
+	public InetSocketAddress getBindAddress(EndpointQualifier qualifier) {
+		return bindAddress;
+	}
+
+	@Override
+	public InetSocketAddress getPublicAddress(EndpointQualifier qualifier) {
+		return bindAddress;
+	}
 }
